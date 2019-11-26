@@ -355,6 +355,9 @@ autocmd FileType gitconfig,sh,toml set noexpandtab
 " python indent
 autocmd BufNewFile,BufRead *.py setlocal tabstop=4 softtabstop=4 shiftwidth=4 textwidth=80 smarttab expandtab
 
+" ruby indent
+autocmd BufNewFile,BufRead *.md setl ts=2 sw=2 sts=2 expandtab
+
 " toml settings
 au BufRead,BufNewFile MAINTAINERS set ft=toml
 
@@ -555,7 +558,7 @@ let g:vim_markdown_json_frontmatter = 1
 
 " =================== vim-airline ========================
 
-let g:airline_theme='solarized'
+let g:airline_theme='deus'
 
 " set to use powerline fonts when not in a ssh session
 let g:remoteSession = ($STY == "")
