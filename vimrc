@@ -467,12 +467,6 @@ au FileType go nmap <Leader>d <Plug>(go-doc)
 
 au FileType go nmap <Leader>e <Plug>(go-rename)
 
-" neovim specific
-if has('nvim')
-  au FileType go nmap <leader>rt <Plug>(go-run-tab)
-  au FileType go nmap <Leader>rs <Plug>(go-run-split)
-  au FileType go nmap <Leader>rv <Plug>(go-run-vertical)
-endif
 
 " I like these more!
 augroup go
