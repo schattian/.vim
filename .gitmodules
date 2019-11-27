@@ -110,3 +110,6 @@
 	path = bundle/coc.nvim
 	url = https://github.com/neoclide/coc.nvim.git
 	branch = release
+[submodule "/home/sebach1/.vim/bundle/colorschemes"]
+	path = /home/sebach1/.vim/bundle/colorschemes
+	url = https://github.com/flazz/vim-colorschemes.git
