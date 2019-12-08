@@ -356,6 +356,7 @@ autocmd FileType gitconfig,sh,toml set noexpandtab
 autocmd BufNewFile,BufRead *.py setlocal tabstop=4 softtabstop=4 shiftwidth=4 textwidth=80 smarttab expandtab
 
 " ruby indent
+autocmd BufNewFile,BufRead *.rb setl ts=2 sw=2 sts=2 expandtab
 autocmd BufNewFile,BufRead *.md setl ts=2 sw=2 sts=2 expandtab
 
 " toml settings
@@ -579,3 +580,5 @@ let g:rust_clip_command = 'xclip -selection clipboard'
 let g:terraform_fmt_on_save=1
 
 " vim:ts=2:sw=2:et
+
+set clipboard=unnamedplus
