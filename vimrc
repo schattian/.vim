@@ -6,7 +6,7 @@ set nocompatible              " be iMproved, required
 filetype off                  " required
 
 filetype plugin indent on     " required
-
+set clipboard=unnamedplus
 "
 " Settings
 "
@@ -356,6 +356,7 @@ autocmd FileType gitconfig,sh,toml set noexpandtab
 autocmd BufNewFile,BufRead *.py setlocal tabstop=4 softtabstop=4 shiftwidth=4 textwidth=80 smarttab expandtab
 
 " ruby indent
+autocmd BufNewFile,BufRead *.rb setl ts=2 sw=2 sts=2 expandtab
 autocmd BufNewFile,BufRead *.md setl ts=2 sw=2 sts=2 expandtab
 
 " toml settings
@@ -431,6 +432,7 @@ nnoremap <leader>ga :Git add %:p<CR><CR>
 nnoremap <leader>gs :Gstatus<CR>
 nnoremap <leader>gp :Gpush<CR>
 vnoremap <leader>gb :Gblame<CR>
+vnoremap <C-c> "*y
 
 " =================== Vim-cfmt ===================
 let g:cfmt_style = '-linux'
@@ -568,7 +570,7 @@ let g:rustfmt_autosave = 1
 " The :RustPlay command will send the current selection, or if nothing is
 " selected the current buffer, to the Rust playpen. Then copy the url to the
 " clipboard.
-let g:rust_clip_command = 'xclip -selection clipboard'
+" let g:rust_clip_command = 'xclip -selection clipboard'
 
 " =================== vim-terraform ========================
 
