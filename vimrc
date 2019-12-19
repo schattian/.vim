@@ -581,3 +581,5 @@ let g:rustfmt_autosave = 1
 let g:terraform_fmt_on_save=1
 
 " vim:ts=2:sw=2:et
+
+set clipboard=unnamedplus
